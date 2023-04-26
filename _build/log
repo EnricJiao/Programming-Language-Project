@@ -1,0 +1,185 @@
+# dune runtest -f
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root: /home/enricjiao/project-4b-EnricJiao
+# Auto-detected concurrency: 8
+$ /usr/bin/ocamlc.opt -config > /tmp/dune_7e2a0e_output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Release
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = "default"
+#  ; toplevel_path = Some External "/home/enricjiao/.opam/default/lib/toplevel"
+#  ; ocaml_bin = External "/usr/bin"
+#  ; ocaml = Ok External "/home/enricjiao/.opam/default/bin/ocaml"
+#  ; ocamlc = External "/usr/bin/ocamlc.opt"
+#  ; ocamlopt = Ok External "/usr/bin/ocamlopt.opt"
+#  ; ocamldep = Ok External "/usr/bin/ocamldep.opt"
+#  ; ocamlmklib = Ok External "/usr/bin/ocamlmklib.opt"
+#  ; env =
+#      map
+#        { "DUNE_OCAML_HARDCODED" : "/home/enricjiao/.opam/default/lib"
+#        ; "DUNE_OCAML_STDLIB" : "/usr/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" : "/home/enricjiao/project-4b-EnricJiao"
+#        ; "INSIDE_DUNE" :
+#            "/home/enricjiao/project-4b-EnricJiao/_build/default"
+#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
+#            "/home/enricjiao/project-4b-EnricJiao/_build/install/default/lib"
+#        ; "OCAMLPATH" :
+#            "/home/enricjiao/project-4b-EnricJiao/_build/install/default/lib"
+#        ; "OCAMLTOP_INCLUDE_PATH" :
+#            "/home/enricjiao/project-4b-EnricJiao/_build/install/default/lib/toplevel"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_paths = [ External "/home/enricjiao/.opam/default/lib" ]
+#  ; arch_sixtyfour = true
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; ocaml_config =
+#      { version = "4.13.1"
+#      ; standard_library_default = "/usr/lib/ocaml"
+#      ; standard_library = "/usr/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "x86_64-linux-gnu-gcc"
+#      ; ocamlc_cflags =
+#          [ "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-fPIC"
+#          ; "-g"
+#          ; "-O2"
+#          ; "-ffile-prefix-map=/build/ocaml-SC7b9w/ocaml-4.13.1=."
+#          ; "-fstack-protector-strong"
+#          ; "-Wformat"
+#          ; "-Werror=format-security"
+#          ]
+#      ; ocamlc_cppflags =
+#          [ "-D_FILE_OFFSET_BITS=64"; "-Wdate-time"; "-D_FORTIFY_SOURCE=2" ]
+#      ; ocamlopt_cflags =
+#          [ "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-fPIC"
+#          ; "-g"
+#          ; "-O2"
+#          ; "-ffile-prefix-map=/build/ocaml-SC7b9w/ocaml-4.13.1=."
+#          ; "-fstack-protector-strong"
+#          ; "-Wformat"
+#          ; "-Werror=format-security"
+#          ]
+#      ; ocamlopt_cppflags =
+#          [ "-D_FILE_OFFSET_BITS=64"; "-Wdate-time"; "-D_FORTIFY_SOURCE=2" ]
+#      ; bytecomp_c_compiler =
+#          [ "x86_64-linux-gnu-gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-fPIC"
+#          ; "-g"
+#          ; "-O2"
+#          ; "-ffile-prefix-map=/build/ocaml-SC7b9w/ocaml-4.13.1=."
+#          ; "-fstack-protector-strong"
+#          ; "-Wformat"
+#          ; "-Werror=format-security"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-Wdate-time"
+#          ; "-D_FORTIFY_SOURCE=2"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "x86_64-linux-gnu-gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-fPIC"
+#          ; "-g"
+#          ; "-O2"
+#          ; "-ffile-prefix-map=/build/ocaml-SC7b9w/ocaml-4.13.1=."
+#          ; "-fstack-protector-strong"
+#          ; "-Wformat"
+#          ; "-Werror=format-security"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-Wdate-time"
+#          ; "-D_FORTIFY_SOURCE=2"
+#          ]
+#      ; native_c_libraries = [ "-lm" ]
+#      ; native_pack_linker = [ "x86_64-linux-gnu-ld"; "-r"; "-o" ]
+#      ; cc_profile = []
+#      ; architecture = "amd64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "linux"
+#      ; asm = [ "x86_64-linux-gnu-as" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "x86_64-pc-linux-gnu"
+#      ; target = "x86_64-pc-linux-gnu"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X030"
+#      ; cmi_magic_number = "Caml1999I030"
+#      ; cmo_magic_number = "Caml1999O030"
+#      ; cma_magic_number = "Caml1999A030"
+#      ; cmx_magic_number = "Caml1999Y030"
+#      ; cmxa_magic_number = "Caml1999Z030"
+#      ; ast_impl_magic_number = "Caml1999M030"
+#      ; ast_intf_magic_number = "Caml1999N030"
+#      ; cmxs_magic_number = "Caml1999D030"
+#      ; cmt_magic_number = "Caml1999T030"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  }
+$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -w -49 -nopervasives -nostdlib -g -bin-annot -I src/.p4b.objs/byte -no-alias-deps -o src/.p4b.objs/byte/p4b.cmo -c -impl src/p4b.ml-gen)
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl src/utils.ml) > _build/default/src/.p4b.objs/utils.ml.d
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -intf src/lexer.mli) > _build/default/src/.p4b.objs/lexer.mli.d
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl src/lexer.ml) > _build/default/src/.p4b.objs/lexer.ml.d
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl src/parser.ml) > _build/default/src/.p4b.objs/parser.ml.d
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -intf src/eval.mli) > _build/default/src/.p4b.objs/eval.mli.d
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -intf src/parser.mli) > _build/default/src/.p4b.objs/parser.mli.d
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl src/microCamlTypes.ml) > _build/default/src/.p4b.objs/microCamlTypes.ml.d
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl src/tokenTypes.ml) > _build/default/src/.p4b.objs/tokenTypes.ml.d
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl src/eval.ml) > _build/default/src/.p4b.objs/eval.ml.d
+$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.p4b.objs/byte -no-alias-deps -open P4b -o src/.p4b.objs/byte/p4b__MicroCamlTypes.cmo -c -impl src/microCamlTypes.ml)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.p4b.objs/byte -no-alias-deps -open P4b -o src/.p4b.objs/byte/p4b__TokenTypes.cmo -c -impl src/tokenTypes.ml)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.p4b.objs/byte -no-alias-deps -open P4b -o src/.p4b.objs/byte/p4b__Eval.cmi -c -intf src/eval.mli)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.p4b.objs/byte -no-alias-deps -open P4b -o src/.p4b.objs/byte/p4b__Lexer.cmi -c -intf src/lexer.mli)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.p4b.objs/byte -no-alias-deps -open P4b -o src/.p4b.objs/byte/p4b__Parser.cmi -c -intf src/parser.mli)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.p4b.objs/byte -no-alias-deps -open P4b -o src/.p4b.objs/byte/p4b__Utils.cmo -c -impl src/utils.ml)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -g -bin-annot -I test/.testUtils.objs/byte -I /home/enricjiao/.opam/default/lib/oUnit -I /home/enricjiao/.opam/default/lib/ounit2 -I /home/enricjiao/.opam/default/lib/ounit2/advanced -I /home/enricjiao/.opam/default/lib/seq -I /home/enricjiao/.opam/default/lib/stdlib-shims -I src/.p4b.objs/byte -no-alias-deps -o test/.testUtils.objs/byte/testUtils.cmo -c -impl test/testUtils.ml)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -g -bin-annot -I test/pbt/.pbt.eobjs/byte -I /home/enricjiao/.opam/default/lib/oUnit -I /home/enricjiao/.opam/default/lib/ounit2 -I /home/enricjiao/.opam/default/lib/ounit2/advanced -I /home/enricjiao/.opam/default/lib/qcheck -I /home/enricjiao/.opam/default/lib/qcheck-core -I /home/enricjiao/.opam/default/lib/qcheck-core/runner -I /home/enricjiao/.opam/default/lib/qcheck-ounit -I /home/enricjiao/.opam/default/lib/seq -I /home/enricjiao/.opam/default/lib/stdlib-shims -I src/.p4b.objs/byte -I test/.testUtils.objs/byte -no-alias-deps -o test/pbt/.pbt.eobjs/byte/dune__exe__Pbt.cmo -c -impl test/pbt/pbt.ml)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -g -bin-annot -I test/public/.public.eobjs/byte -I /home/enricjiao/.opam/default/lib/oUnit -I /home/enricjiao/.opam/default/lib/ounit2 -I /home/enricjiao/.opam/default/lib/ounit2/advanced -I /home/enricjiao/.opam/default/lib/seq -I /home/enricjiao/.opam/default/lib/stdlib-shims -I src/.p4b.objs/byte -I test/.testUtils.objs/byte -no-alias-deps -o test/public/.public.eobjs/byte/dune__exe__Public.cmo -c -impl test/public/public.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -w -49 -nopervasives -nostdlib -g -I src/.p4b.objs/byte -I src/.p4b.objs/native -intf-suffix .ml-gen -no-alias-deps -o src/.p4b.objs/native/p4b.cmx -c -impl src/p4b.ml-gen)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -g -I src/.p4b.objs/byte -I src/.p4b.objs/native -intf-suffix .ml -no-alias-deps -open P4b -o src/.p4b.objs/native/p4b__MicroCamlTypes.cmx -c -impl src/microCamlTypes.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -g -I src/.p4b.objs/byte -I src/.p4b.objs/native -intf-suffix .ml -no-alias-deps -open P4b -o src/.p4b.objs/native/p4b__TokenTypes.cmx -c -impl src/tokenTypes.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -g -I src/.p4b.objs/byte -I src/.p4b.objs/native -intf-suffix .ml -no-alias-deps -open P4b -o src/.p4b.objs/native/p4b__Lexer.cmx -c -impl src/lexer.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -g -I src/.p4b.objs/byte -I src/.p4b.objs/native -intf-suffix .ml -no-alias-deps -open P4b -o src/.p4b.objs/native/p4b__Utils.cmx -c -impl src/utils.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -g -I src/.p4b.objs/byte -I src/.p4b.objs/native -intf-suffix .ml -no-alias-deps -open P4b -o src/.p4b.objs/native/p4b__Eval.cmx -c -impl src/eval.ml)
+> File "src/eval.ml", line 26, characters 51-54:
+> 26 |   | (var, value)::t -> if x = var then !value else ref-lookup t x
+>                                                         ^^^
+> Error: This expression has type 'a -> 'a ref
+>        but an expression was expected of type int
+[2]
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -g -I src/.p4b.objs/byte -I src/.p4b.objs/native -intf-suffix .ml -no-alias-deps -open P4b -o src/.p4b.objs/native/p4b__Parser.cmx -c -impl src/parser.ml)
