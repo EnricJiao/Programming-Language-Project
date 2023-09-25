@@ -1,9 +1,9 @@
-# dune runtest -f
+# dune exec bin/mutop.exe
 # OCAMLPARAM: unset
 # Shared cache: disabled
 # Workspace root: /home/enricjiao/project-4b-EnricJiao
 # Auto-detected concurrency: 8
-$ /usr/bin/ocamlc.opt -config > /tmp/dune_7e2a0e_output
+$ /usr/bin/ocamlc.opt -config > /tmp/dune_e9846e_output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -11,7 +11,7 @@ $ /usr/bin/ocamlc.opt -config > /tmp/dune_7e2a0e_output
 #  ; merlin = true
 #  ; for_host = None
 #  ; fdo_target_exe = None
-#  ; build_dir = "default"
+#  ; build_dir = In_build_dir "default"
 #  ; toplevel_path = Some External "/home/enricjiao/.opam/default/lib/toplevel"
 #  ; ocaml_bin = External "/usr/bin"
 #  ; ocaml = Ok External "/home/enricjiao/.opam/default/bin/ocaml"
@@ -151,35 +151,8 @@ $ /usr/bin/ocamlc.opt -config > /tmp/dune_7e2a0e_output
 #      ; windows_unicode = false
 #      }
 #  }
-$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -w -49 -nopervasives -nostdlib -g -bin-annot -I src/.p4b.objs/byte -no-alias-deps -o src/.p4b.objs/byte/p4b.cmo -c -impl src/p4b.ml-gen)
-$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl src/utils.ml) > _build/default/src/.p4b.objs/utils.ml.d
-$ (cd _build/default && /usr/bin/ocamldep.opt -modules -intf src/lexer.mli) > _build/default/src/.p4b.objs/lexer.mli.d
-$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl src/lexer.ml) > _build/default/src/.p4b.objs/lexer.ml.d
-$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl src/parser.ml) > _build/default/src/.p4b.objs/parser.ml.d
-$ (cd _build/default && /usr/bin/ocamldep.opt -modules -intf src/eval.mli) > _build/default/src/.p4b.objs/eval.mli.d
-$ (cd _build/default && /usr/bin/ocamldep.opt -modules -intf src/parser.mli) > _build/default/src/.p4b.objs/parser.mli.d
-$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl src/microCamlTypes.ml) > _build/default/src/.p4b.objs/microCamlTypes.ml.d
-$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl src/tokenTypes.ml) > _build/default/src/.p4b.objs/tokenTypes.ml.d
-$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl src/eval.ml) > _build/default/src/.p4b.objs/eval.ml.d
-$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.p4b.objs/byte -no-alias-deps -open P4b -o src/.p4b.objs/byte/p4b__MicroCamlTypes.cmo -c -impl src/microCamlTypes.ml)
-$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.p4b.objs/byte -no-alias-deps -open P4b -o src/.p4b.objs/byte/p4b__TokenTypes.cmo -c -impl src/tokenTypes.ml)
-$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.p4b.objs/byte -no-alias-deps -open P4b -o src/.p4b.objs/byte/p4b__Eval.cmi -c -intf src/eval.mli)
-$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.p4b.objs/byte -no-alias-deps -open P4b -o src/.p4b.objs/byte/p4b__Lexer.cmi -c -intf src/lexer.mli)
-$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.p4b.objs/byte -no-alias-deps -open P4b -o src/.p4b.objs/byte/p4b__Parser.cmi -c -intf src/parser.mli)
-$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -g -bin-annot -I src/.p4b.objs/byte -no-alias-deps -open P4b -o src/.p4b.objs/byte/p4b__Utils.cmo -c -impl src/utils.ml)
-$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -g -bin-annot -I test/.testUtils.objs/byte -I /home/enricjiao/.opam/default/lib/oUnit -I /home/enricjiao/.opam/default/lib/ounit2 -I /home/enricjiao/.opam/default/lib/ounit2/advanced -I /home/enricjiao/.opam/default/lib/seq -I /home/enricjiao/.opam/default/lib/stdlib-shims -I src/.p4b.objs/byte -no-alias-deps -o test/.testUtils.objs/byte/testUtils.cmo -c -impl test/testUtils.ml)
-$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -g -bin-annot -I test/pbt/.pbt.eobjs/byte -I /home/enricjiao/.opam/default/lib/oUnit -I /home/enricjiao/.opam/default/lib/ounit2 -I /home/enricjiao/.opam/default/lib/ounit2/advanced -I /home/enricjiao/.opam/default/lib/qcheck -I /home/enricjiao/.opam/default/lib/qcheck-core -I /home/enricjiao/.opam/default/lib/qcheck-core/runner -I /home/enricjiao/.opam/default/lib/qcheck-ounit -I /home/enricjiao/.opam/default/lib/seq -I /home/enricjiao/.opam/default/lib/stdlib-shims -I src/.p4b.objs/byte -I test/.testUtils.objs/byte -no-alias-deps -o test/pbt/.pbt.eobjs/byte/dune__exe__Pbt.cmo -c -impl test/pbt/pbt.ml)
-$ (cd _build/default && /usr/bin/ocamlc.opt -w -40 -g -bin-annot -I test/public/.public.eobjs/byte -I /home/enricjiao/.opam/default/lib/oUnit -I /home/enricjiao/.opam/default/lib/ounit2 -I /home/enricjiao/.opam/default/lib/ounit2/advanced -I /home/enricjiao/.opam/default/lib/seq -I /home/enricjiao/.opam/default/lib/stdlib-shims -I src/.p4b.objs/byte -I test/.testUtils.objs/byte -no-alias-deps -o test/public/.public.eobjs/byte/dune__exe__Public.cmo -c -impl test/public/public.ml)
-$ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -w -49 -nopervasives -nostdlib -g -I src/.p4b.objs/byte -I src/.p4b.objs/native -intf-suffix .ml-gen -no-alias-deps -o src/.p4b.objs/native/p4b.cmx -c -impl src/p4b.ml-gen)
-$ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -g -I src/.p4b.objs/byte -I src/.p4b.objs/native -intf-suffix .ml -no-alias-deps -open P4b -o src/.p4b.objs/native/p4b__MicroCamlTypes.cmx -c -impl src/microCamlTypes.ml)
-$ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -g -I src/.p4b.objs/byte -I src/.p4b.objs/native -intf-suffix .ml -no-alias-deps -open P4b -o src/.p4b.objs/native/p4b__TokenTypes.cmx -c -impl src/tokenTypes.ml)
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl src/lexer.ml) > _build/default/src/.p4b.objs/p4b__Lexer.impl.d
 $ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -g -I src/.p4b.objs/byte -I src/.p4b.objs/native -intf-suffix .ml -no-alias-deps -open P4b -o src/.p4b.objs/native/p4b__Lexer.cmx -c -impl src/lexer.ml)
-$ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -g -I src/.p4b.objs/byte -I src/.p4b.objs/native -intf-suffix .ml -no-alias-deps -open P4b -o src/.p4b.objs/native/p4b__Utils.cmx -c -impl src/utils.ml)
-$ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -g -I src/.p4b.objs/byte -I src/.p4b.objs/native -intf-suffix .ml -no-alias-deps -open P4b -o src/.p4b.objs/native/p4b__Eval.cmx -c -impl src/eval.ml)
-> File "src/eval.ml", line 26, characters 51-54:
-> 26 |   | (var, value)::t -> if x = var then !value else ref-lookup t x
->                                                         ^^^
-> Error: This expression has type 'a -> 'a ref
->        but an expression was expected of type int
-[2]
-$ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -g -I src/.p4b.objs/byte -I src/.p4b.objs/native -intf-suffix .ml -no-alias-deps -open P4b -o src/.p4b.objs/native/p4b__Parser.cmx -c -impl src/parser.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -g -I bin/.mutop.eobjs/byte -I bin/.mutop.eobjs/native -I src/.p4b.objs/byte -I src/.p4b.objs/native -intf-suffix .ml -no-alias-deps -o bin/.mutop.eobjs/native/dune__exe__Mutop.cmx -c -impl bin/mutop.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -g -a -o src/p4b.cmxa src/.p4b.objs/native/p4b.cmx src/.p4b.objs/native/p4b__MicroCamlTypes.cmx src/.p4b.objs/native/p4b__TokenTypes.cmx src/.p4b.objs/native/p4b__Utils.cmx src/.p4b.objs/native/p4b__Parser.cmx src/.p4b.objs/native/p4b__Lexer.cmx src/.p4b.objs/native/p4b__Eval.cmx)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w -40 -g -o bin/mutop.exe /usr/lib/ocaml/str.cmxa -I /usr/lib/ocaml src/p4b.cmxa bin/.mutop.eobjs/native/dune__exe__Mutop.cmx)
